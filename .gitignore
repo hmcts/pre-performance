@@ -1,0 +1,14 @@
+results/*
+.DS_Store
+.vscode
+.metals
+.idea/
+target/**
+*.iml
+*.project
+.gradle/
+build/**
+*.log
+out/**
+*.lock
+.bloop
