@@ -22,7 +22,7 @@ class preCreateCaseBookingSimulation extends Simulation {
   //get bearer token from powerapps UI using network tab on /invoke headers
   val authcode = "Bearer "
 
-  val dataFeeder = csv("src/gatling/scala/resources/createBooking-stg.csv").queue
+  val dataFeeder = csv("src/gatling/scala/resources/createBooking.csv").queue
       // Define the date format
   val dateFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS")
   
