@@ -1,0 +1,20 @@
+  config:
+    target: "cvp conference url goes here" 
+    phases:
+      - duration: 10  # Test runs for 60 seconds
+        arrivalRate: 1  # 5 users per second
+    engines:
+      playwright: 
+        options:
+          headless: false
+          browserName: "chromium"
+          launchOptions:
+            args:
+              - "--use-fake-ui-for-media-stream"
+              - "--use-fake-device-for-media-stream"
+              - "--disable-features=WebRtcHideLocalIpsWithMdns"
+              - "--allow-file-access-from-files"
+
+            permissions: ["camera", "microphone"]
+
+  
